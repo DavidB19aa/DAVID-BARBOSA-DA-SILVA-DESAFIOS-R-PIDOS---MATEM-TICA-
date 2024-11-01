@@ -1,0 +1,114 @@
+/* 
+   ESTUDANTE: DAVID BARBOSA DA SILVA
+   MATRÍCULA: 202304324468
+*/
+
+:root {
+    --primary-bg: blue;
+    --correct-bg: green;
+    --wrong-bg: red;
+    --btn-bg: blue;
+    --btn-hover-bg: #1E88E5;
+    --text-color: white;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #181818;
+}
+
+h1, h3 {
+
+    text-align: center;
+}
+
+h1 {
+    margin: 20px 0;
+    background-color: var(--text-color);
+    color: black;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--text-color);
+    padding: 60px;
+    width: 300px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#pergunta {
+    background-color: var(--primary-bg);
+	text-align: center;
+    color: var(--text-color);
+    padding: 20px;
+    width: 150px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+}
+
+#respostas button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: var(--text-color);
+    transition: background-color 0.3s;
+}
+
+#respostas button.correct {
+    background-color: var(--correct-bg);
+}
+
+#respostas button.wrong {
+    background-color: var(--wrong-bg);
+}
+
+#mensagem, #tempo, #pontuacao {
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+#barra-progresso {
+    width: 100%;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+#progresso {
+    height: 100%;
+    width: 100%;
+    background-color: var(--primary-bg);
+    border-radius: 5px;
+}
+
+button {
+    background-color: var(--btn-bg);
+    color: var(--text-color);
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+button:hover {
+    background-color: var(--btn-hover-bg);
+    transform: scale(1.02);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
